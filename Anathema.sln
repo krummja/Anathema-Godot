@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anathema", "Anathema.csproj", "{BBAE0C05-22D5-4452-8392-D27205980C8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBAE0C05-22D5-4452-8392-D27205980C8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBAE0C05-22D5-4452-8392-D27205980C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBAE0C05-22D5-4452-8392-D27205980C8C}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{BBAE0C05-22D5-4452-8392-D27205980C8C}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{BBAE0C05-22D5-4452-8392-D27205980C8C}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{BBAE0C05-22D5-4452-8392-D27205980C8C}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal

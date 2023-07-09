@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3 uid="uid://dv8xfl88yyp7q"]
+
+[ext_resource type="Script" path="res://scenes/overlay/main_menu/load_game_menu/LoadGameMenu.cs" id="1_qnec3"]
+
+[node name="LoadGameMenu" type="Control" node_paths=PackedStringArray("Back")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qnec3")
+Back = NodePath("CenterContainer/Buttons/Back")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0784314, 0.0784314, 0.0784314, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Buttons" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Back" type="Button" parent="CenterContainer/Buttons"]
+layout_mode = 2
+size_flags_vertical = 4
+text = "Back
+"

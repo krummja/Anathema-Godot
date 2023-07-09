@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpoapochvakbb"]
+
+[ext_resource type="Script" path="res://scene_editor/EditorView.cs" id="1_ggh1w"]
+[ext_resource type="Script" path="res://scene_editor/menu_bar/Menu.cs" id="2_d3quc"]
+
+[node name="SceneController" type="Node"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ggh1w")
+
+[node name="Panel" type="Panel" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Wrapper" type="VBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuBar" type="MenuBar" parent="Control/Wrapper"]
+layout_mode = 2
+size_flags_vertical = 0
+size_flags_stretch_ratio = 0.05
+flat = true
+script = ExtResource("2_d3quc")
+
+[node name="Add" type="PopupMenu" parent="Control/Wrapper/MenuBar"]
+size = Vector2i(102, 100)
+
+[node name="GraphEdit" type="GraphEdit" parent="Control/Wrapper"]
+layout_mode = 2
+size_flags_vertical = 3
+scroll_offset = Vector2(-40, 0)

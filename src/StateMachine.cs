@@ -1,7 +1,6 @@
 using Godot;
 using System.Collections.Generic;
 
-
 public enum States
 {
     BOOT,
@@ -13,10 +12,10 @@ public enum States
     EXIT,
 }
 
-
 public partial class State<T> : Node
 {
     public delegate void DelegateNoArg();
+
     public DelegateNoArg OnEnter;
     public DelegateNoArg OnExit;
 
@@ -24,7 +23,8 @@ public partial class State<T> : Node
 
     public T ID { get; private set; }
 
-    public State() {}
+    public State()
+    { }
 
     public State(Main main, T id)
     {
@@ -32,11 +32,12 @@ public partial class State<T> : Node
         this.ID = id;
     }
 
-    public virtual void Enter() {}
+    public virtual void Enter()
+    { }
 
-    public virtual void Exit() {}
+    public virtual void Exit()
+    { }
 }
-
 
 public class StateMachine<T>
 {
@@ -67,7 +68,8 @@ public class StateMachine<T>
     {
         State<T> state = states[stateID];
 
-        if (this.CurrentState == state) return;
+        if (this.CurrentState == state)
+            return;
         if (this.CurrentState != null)
         {
             this.CurrentState.OnExit?.Invoke();

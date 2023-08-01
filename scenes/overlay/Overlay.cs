@@ -1,7 +1,6 @@
 using Godot;
 using System.Collections.Generic;
 
-
 public partial class Overlay : Control
 {
     public Stack<Node> Screens { get; private set; }

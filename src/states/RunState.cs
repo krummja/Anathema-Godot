@@ -1,6 +1,5 @@
 using Godot;
 
-
 public partial class RunState : State<States>
 {
     public RunState(Main main) : base(main, States.RUN)

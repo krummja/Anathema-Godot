@@ -1,6 +1,5 @@
 using Godot;
 
-
 public enum MainMenuEvent
 {
     NEW_GAME,
@@ -12,7 +11,6 @@ public enum StackableMenuEvent
 {
     BACK,
 }
-
 
 public partial class MainMenu : Control
 {
@@ -37,16 +35,16 @@ public partial class MainMenu : Control
 
     private void OnNewGamePressed()
     {
-        EmitSignal(SignalName.ButtonPressed, (int) MainMenuEvent.NEW_GAME);
+        EmitSignal(SignalName.ButtonPressed, (int)MainMenuEvent.NEW_GAME);
     }
 
     private void OnLoadGamePressed()
     {
-        EmitSignal(SignalName.ButtonPressed, (int) MainMenuEvent.LOAD_GAME);
+        EmitSignal(SignalName.ButtonPressed, (int)MainMenuEvent.LOAD_GAME);
     }
 
     private void OnExitPressed()
     {
-        EmitSignal(SignalName.ButtonPressed, (int) MainMenuEvent.EXIT);
+        EmitSignal(SignalName.ButtonPressed, (int)MainMenuEvent.EXIT);
     }
 }

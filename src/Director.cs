@@ -1,13 +1,11 @@
 using Godot;
 using Godot.Collections;
 
-
 public enum MountPoint
 {
     OVERLAY,
     WORLD,
 }
-
 
 public partial class Director : Node
 {
@@ -84,7 +82,7 @@ public partial class Director : Node
         where T : Node
     {
         this.SetScenePath(folder, scene, mount);
-        this.loadedScene = (PackedScene) ResourceLoader.Load(scenePath);
+        this.loadedScene = (PackedScene)ResourceLoader.Load(scenePath);
         Node mounted = this.Mount(mount);
 
         EmitSignal(SignalName.LoadComplete);
@@ -111,7 +109,8 @@ public partial class Director : Node
 
     private Node Mount(MountPoint mount)
     {
-        if (this.loadedScene == null) return null;
+        if (this.loadedScene == null)
+            return null;
 
         Node child = GetLoadedScene();
 

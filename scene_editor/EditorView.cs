@@ -1,6 +1,5 @@
-using System;
 using Godot;
-
+using System;
 
 public partial class EditorView : Control
 {
@@ -14,7 +13,6 @@ public partial class EditorView : Control
         {
             clickedPos = mouseButton.Position;
         }
-
         else if (@event is InputEventMouseMotion mouseMotion)
         {
             clickedPos = null;

@@ -1,6 +1,5 @@
 using Godot;
 
-
 public partial class Loading : Control
 {
     [Export]
@@ -16,7 +15,7 @@ public partial class Loading : Control
     {
         if (this.IsLoading && this.Director != null)
         {
-            this.progress = ((float) this.Director.Progress[0]) * 100;
+            this.progress = ((float)this.Director.Progress[0]) * 100;
             this.ProgressBar.Value = this.progress;
         }
     }

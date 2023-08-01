@@ -1,6 +1,5 @@
 using Godot;
 
-
 public partial class Menu : MenuBar
 {
     private PopupMenu addMenu;
@@ -10,7 +9,6 @@ public partial class Menu : MenuBar
         addMenu = GetMenuPopup(0);
         addMenu.AddItem("Test Node");
         addMenu.IdPressed += OnAddPressed;
-
     }
 
     private void OnAddPressed(long id)

@@ -1,6 +1,5 @@
 using Godot;
 
-
 public partial class SplashScreen : Control
 {
     [Signal]
@@ -17,12 +16,14 @@ public partial class SplashScreen : Control
 
     public override void _Ready()
     {
-        SplashAnimator.AnimationFinished += (name) => {
+        SplashAnimator.AnimationFinished += (name) =>
+        {
             if (name == "splash")
                 TransitionAnimator.Play("fade_in");
         };
 
-        TransitionAnimator.AnimationFinished += (name) => {
+        TransitionAnimator.AnimationFinished += (name) =>
+        {
             if (name == "fade_in")
                 EmitSignal(SignalName.OnSplashComplete);
         };

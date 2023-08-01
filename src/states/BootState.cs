@@ -1,6 +1,3 @@
-using Godot;
-
-
 public partial class BootState : State<States>
 {
     public BootState(Main main) : base(main, States.BOOT)

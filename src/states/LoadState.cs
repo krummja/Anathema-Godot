@@ -1,6 +1,3 @@
-using Godot;
-
-
 public partial class LoadState : State<States>
 {
     private bool isLoading = false;

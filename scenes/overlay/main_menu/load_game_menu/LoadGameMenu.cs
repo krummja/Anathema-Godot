@@ -1,6 +1,5 @@
 using Godot;
 
-
 public partial class LoadGameMenu : Control
 {
     [Signal]
@@ -16,6 +15,6 @@ public partial class LoadGameMenu : Control
 
     public void OnBackPressed()
     {
-        EmitSignal(SignalName.ButtonPressed, (int) StackableMenuEvent.BACK);
+        EmitSignal(SignalName.ButtonPressed, (int)StackableMenuEvent.BACK);
     }
 }

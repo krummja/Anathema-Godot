@@ -1,6 +1,5 @@
 using Godot;
 
-
 public partial class ExitState : State<States>
 {
     public ExitState(Main main) : base(main, States.EXIT)
@@ -11,7 +10,7 @@ public partial class ExitState : State<States>
     public override void Enter()
     {
         SceneTree tree = this.main.GetTree();
-        tree.Root.PropagateNotification((int) Node.NotificationWMCloseRequest);
+        tree.Root.PropagateNotification((int)Node.NotificationWMCloseRequest);
         this.main.PrepareExit();
     }
 }
